@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -18,33 +19,33 @@
             background: #f5f5f5;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         h1 {
             color: #2c3e50;
             margin-bottom: 10px;
             font-size: 2em;
         }
-        
+
         .app-name {
             color: #27ae60;
             font-weight: bold;
         }
-        
+
         .last-updated {
             color: #7f8c8d;
             font-size: 0.9em;
             margin-bottom: 30px;
         }
-        
+
         h2 {
             color: #27ae60;
             margin-top: 30px;
@@ -53,66 +54,67 @@
             border-bottom: 2px solid #27ae60;
             padding-bottom: 5px;
         }
-        
+
         h3 {
             color: #34495e;
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 1.2em;
         }
-        
+
         p {
             margin-bottom: 15px;
             text-align: justify;
         }
-        
+
         ul {
             margin-left: 25px;
             margin-bottom: 15px;
         }
-        
+
         li {
             margin-bottom: 8px;
         }
-        
+
         .highlight {
             background: #ecf0f1;
             padding: 15px;
             border-left: 4px solid #27ae60;
             margin: 20px 0;
         }
-        
+
         .contact {
             background: #e8f5e9;
             padding: 20px;
             border-radius: 5px;
             margin-top: 30px;
         }
-        
+
         a {
             color: #27ae60;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
             }
-            
+
             h1 {
                 font-size: 1.5em;
             }
-            
+
             h2 {
                 font-size: 1.3em;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
@@ -120,22 +122,27 @@
         <p class="last-updated">Last Updated: December 25, 2024</p>
 
         <div class="highlight">
-            <strong>TL;DR:</strong> Your financial data stays on your device. We don't collect, store, or share your personal information. The only data collected is anonymous usage data by Google AdMob for showing relevant ads.
+            <strong>TL;DR:</strong> Your financial data stays on your device. We don't collect, store, or share your
+            personal information. The only data collected is anonymous usage data by Google AdMob for showing relevant
+            ads.
         </div>
 
         <h2>1. Introduction</h2>
         <p>
-            Vatti Kanakku ("we," "our," or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application available on the Google Play Store.
+            Vatti Kanakku ("we," "our," or "the app") is committed to protecting your privacy. This Privacy Policy
+            explains how we handle your information when you use our mobile application available on the Google Play
+            Store.
         </p>
         <p>
             By using Vatti Kanakku, you agree to the collection and use of information in accordance with this policy.
         </p>
 
         <h2>2. Information We Collect</h2>
-        
+
         <h3>2.1 Personal Financial Data</h3>
         <p>
-            <strong>We DO NOT collect, store, or transmit your financial data to any server.</strong> All your data including:
+            <strong>We DO NOT collect, store, or transmit your financial data to any server.</strong> All your data
+            including:
         </p>
         <ul>
             <li>Lending and borrowing records</li>
@@ -145,12 +152,14 @@
             <li>Interest calculations</li>
         </ul>
         <p>
-            is stored <strong>locally on your device only</strong> using SQLite database. This data never leaves your device unless you explicitly choose to share it (via PDF export or sharing features).
+            is stored <strong>locally on your device only</strong> using SQLite database. This data never leaves your
+            device unless you explicitly choose to share it (via PDF export or sharing features).
         </p>
 
         <h3>2.2 Advertising Data</h3>
         <p>
-            We use Google AdMob to display advertisements in the app. AdMob may collect and use the following information:
+            We use Google AdMob to display advertisements in the app. AdMob may collect and use the following
+            information:
         </p>
         <ul>
             <li>Device advertising identifier (Google Advertising ID)</li>
@@ -160,10 +169,33 @@
             <li>Approximate location (country/city level only)</li>
         </ul>
         <p>
-            This data is collected and managed by Google according to their <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.
+            This data is collected and managed by Google according to their <a
+                href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.
         </p>
 
-        <h3>2.3 Data We Do NOT Collect</h3>
+        <h3>2.3 Analytics Data</h3>
+        <p>
+            We use PostHog to understand how users interact with our app. PostHog collects anonymous usage data
+            including:
+        </p>
+        <ul>
+            <li>App screens viewed (e.g., "Home Screen", "Ledger List")</li>
+            <li>Feature usage patterns (e.g., "EMI Calculator used", "Person Added")</li>
+            <li>Anonymous interaction events (button clicks, navigation)</li>
+            <li>Device type and operating system version</li>
+            <li>App version and language preference</li>
+        </ul>
+        <p>
+            <strong>Important:</strong> PostHog does NOT collect any personal financial data, transaction amounts,
+            person names, or any personally identifiable information. All analytics data is anonymized and used solely
+            to improve app features and user experience.
+        </p>
+        <p>
+            PostHog data is processed according to their <a href="https://posthog.com/privacy" target="_blank">Privacy
+                Policy</a>.
+        </p>
+
+        <h3>2.4 Data We Do NOT Collect</h3>
         <ul>
             <li>Name, email address, or phone number</li>
             <li>Precise location data</li>
@@ -174,7 +206,7 @@
         </ul>
 
         <h2>3. How We Use Your Information</h2>
-        
+
         <h3>3.1 Local Data Usage</h3>
         <p>
             Your financial data stored locally is used solely for:
@@ -197,7 +229,7 @@
         </ul>
 
         <h2>4. Data Sharing and Third-Party Services</h2>
-        
+
         <h3>4.1 Third-Party Services</h3>
         <p>
             We use the following third-party service:
@@ -205,18 +237,23 @@
         <ul>
             <li>
                 <strong>Google AdMob:</strong> For displaying advertisements
-                <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+                <br>Privacy Policy: <a href="https://policies.google.com/privacy"
+                    target="_blank">https://policies.google.com/privacy</a>
             </li>
         </ul>
 
         <h3>4.2 Data Sharing</h3>
         <p>
-            <strong>We do not sell, trade, or rent your personal information to third parties.</strong> Your financial data remains on your device. The only data shared is anonymous advertising data with Google AdMob as described above.
+            <strong>We do not sell, trade, or rent your personal information to third parties.</strong> Your financial
+            data remains on your device. The only data shared is anonymous advertising data with Google AdMob as
+            described above.
         </p>
 
         <h3>4.3 PDF Sharing</h3>
         <p>
-            When you choose to share generated PDFs (promissory notes, reports), you control where this data goes. We use the device's native sharing functionality, and the data is only shared with apps you explicitly choose (e.g., WhatsApp, Email).
+            When you choose to share generated PDFs (promissory notes, reports), you control where this data goes. We
+            use the device's native sharing functionality, and the data is only shared with apps you explicitly choose
+            (e.g., WhatsApp, Email).
         </p>
 
         <h2>5. Data Security</h2>
@@ -230,7 +267,8 @@
             <li>Only you have access to your financial data on your device</li>
         </ul>
         <p>
-            However, please note that no method of electronic storage is 100% secure. The security of your device (screen lock, device encryption) is your responsibility.
+            However, please note that no method of electronic storage is 100% secure. The security of your device
+            (screen lock, device encryption) is your responsibility.
         </p>
 
         <h2>6. Data Retention and Deletion</h2>
@@ -246,7 +284,9 @@
 
         <h2>7. Children's Privacy</h2>
         <p>
-            Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.
+            Our app is not intended for children under the age of 13. We do not knowingly collect personal information
+            from children under 13. If you are a parent or guardian and believe your child has provided us with personal
+            information, please contact us so we can take appropriate action.
         </p>
 
         <h2>8. Your Rights</h2>
@@ -275,7 +315,9 @@
 
         <h2>10. International Users</h2>
         <p>
-            This app is designed for users globally. Since all data is stored locally on your device, it remains in your geographical location. Only advertising data may be processed by Google's servers, which may be located in different countries.
+            This app is designed for users globally. Since all data is stored locally on your device, it remains in your
+            geographical location. Only advertising data may be processed by Google's servers, which may be located in
+            different countries.
         </p>
 
         <h2>11. Changes to This Privacy Policy</h2>
@@ -287,21 +329,24 @@
             <li>Posting an in-app notification (for major changes)</li>
         </ul>
         <p>
-            You are advised to review this Privacy Policy periodically for any changes. Changes are effective when posted.
+            You are advised to review this Privacy Policy periodically for any changes. Changes are effective when
+            posted.
         </p>
 
         <h2>12. Third-Party Links</h2>
         <p>
-            Our app does not contain links to other websites. If we add such features in the future, we will update this policy accordingly.
+            Our app does not contain links to other websites. If we add such features in the future, we will update this
+            policy accordingly.
         </p>
 
         <h2>13. Contact Us</h2>
         <div class="contact">
             <p>
-                If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:
+                If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your
+                data, please contact us:
             </p>
             <ul>
-                <li><strong>Email:</strong> sisuengine@gmail.com (or your preferred email)</li>
+                <li><strong>Email:</strong> support@vatikanakku.com (or your preferred email)</li>
                 <li><strong>In-App:</strong> Use the "Contact Support" option in app settings</li>
             </ul>
             <p>
@@ -311,7 +356,8 @@
 
         <h2>14. Consent</h2>
         <p>
-            By using Vatti Kanakku, you consent to this Privacy Policy and agree to its terms. If you do not agree with any part of this policy, please do not use the app.
+            By using Vatti Kanakku, you consent to this Privacy Policy and agree to its terms. If you do not agree with
+            any part of this policy, please do not use the app.
         </p>
 
         <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
@@ -323,4 +369,5 @@
         </p>
     </div>
 </body>
+
 </html>
